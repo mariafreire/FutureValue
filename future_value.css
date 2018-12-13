@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+html {
+    height: 100%;
+    background-color: #435761; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#435761, #0C4767);
+}
+
+main {
+    font-family: Roboto;
+    font-weight: 400;
+    color: #2E382E;
+    background-color: #FFFFFF;
+	width: 500px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 1px solid #39393A;
+    position: relative;
+    top: 100px;
+}
+h1 {
+    font-family: Roboto;
+    font-weight: 700;
+    text-align: center;
+	color: #435761;
+}
+
+label {
+    position: relative;
+    left: 60px;
+    top: 10px;
+	float: left;
+    width: 8em;
+    text-align: right;
+}
+
+input {
+    font-size: 11pt;
+    margin-left: 7em;
+    margin-bottom: 1.5em;
+    padding-left: 1em;
+    width: 11em;
+    height: 2em;
+}
+
+#calculate, #reset {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #435761;
+    transition: all 0.2s;
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    left: 160px;
+}
+
+#calculate:hover, #reset:hover {
+    box-shadow: 0 0 2em rgba(0,0,0,0.1);
+    background-color: #0C4767;
+}
+
+/*----Media!!!!----*/
+@media screen and (max-width: 768px){
+
+main {
+    width: 300px;
+    border: 1px solid #39393A;
+    position: relative;
+    top: 50px;
+}
+
+label {
+    position: relative;
+    left: 60px;
+    top: -6px;
+    width: 8em;
+    text-align: left;
+}
+
+input {
+    margin-left: 4em;
+}
+
+#calculate, #reset {
+    position: relative;
+    left: 30px;
+}
+}
